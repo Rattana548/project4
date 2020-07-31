@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void oklol(float,float,float,float,float);
+void add_f(float,float,float,float,float);
 
 int main() {
 	short quizz1, quizz2, quizz3,mid,fin;
@@ -16,14 +16,14 @@ int main() {
 	cout << "==============FINAL===============" << endl;
 	cout << "Enter final (50) : ";
 	cin >> fin;
-	oklol(quizz1,quizz2,quizz3,mid,fin);
+	add_f(quizz1,quizz2,quizz3,mid,fin);
 
 
 	system("pause");
 
 	return 0;
 }
-void oklol(float qui1,float qui2,float qui3 , float mid, float fin) {
+void add_f(float qui1,float qui2,float qui3 , float mid, float fin) {
 	float addqui = (qui1 + qui2 + qui3) / 3;
 	cout << "Quizz total : " << addqui << endl << "Mid term : " << mid << endl << "Final : " << fin << endl;
 	float total = addqui + (mid + fin);
